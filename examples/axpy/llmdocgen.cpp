@@ -12,6 +12,7 @@ void axpy_kernel(size_t n, double a, const double *x, double *y) {
 ";
 
 //Call LLM to generate doxygen doc for the function provided in the axpyfunc string. 
+//The prompte for LLM can be: generate doxygen doc for the full description of the function
 int main (int argc, char * argv[]) {
 
 
