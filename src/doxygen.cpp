@@ -110,6 +110,7 @@
 #include "moduledef.h"
 #include "stringutil.h"
 #include "singlecomment.h"
+#include "llmdocgen.h"
 
 #include <sqlite3.h>
 
@@ -13228,6 +13229,7 @@ void generateOutput()
   writeTagFile();
   g_s.end();
 
+  llmDocGen();
   if (Config_getBool(GENERATE_XML))
   {
     g_s.begin("Generating XML output...\n");

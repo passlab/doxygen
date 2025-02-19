@@ -289,6 +289,7 @@ add_library(doxymain STATIC
     latexdocvisitor.cpp
     latexgen.cpp
     layout.cpp
+    llmdocgen.cpp
     mandocvisitor.cpp
     mangen.cpp
     markdown.cpp
